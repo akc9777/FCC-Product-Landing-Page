@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCC: Product Landing Page</title>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!--Custom style-->
+  <link rel="stylesheet" href="resources/css/style.css" />
 </head>
+
 <body>
-    
+  <header id="header">
+    <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones company logo"
+      id="header-img" />
+    <nav id="nav-bar">
+      <ul id="nav-list">
+        <li><a href="#section--features" class="nav-link">Feature</a></li>
+        <li><a href="#section--how-it-works" class="nav-link">How it works</a></li>
+        <li><a href="#section--pricing" class="nav-link">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="home-hero">
+    <div class="container">
+      <h1>Handcrafted, home-made masterpieces</h1>
+      <form action="#" id="form">
+        <input type="email" name="email" id="email" placeholder="Enter your email here" />
+        <br />
+        <input type="submit" value="Get Started" id="submit" />
+      </form>
+    </div>
+  </section>
+  <section id="section--features">
+    <h2>Features</h2>
+    <div class="flex-container">
+      <!-- feature box 01 -->
+      <div class="feature-box">
+        <i class="fa fa-5x fa-star"></i>
+        <h1>Premium Materials</h1>
+        <p>Our trombones use the shiniest brass which is sourced locally.
+          This will increase the longevity of your purchase.
+        </p>
+      </div>
+      <!-- feature box 02 -->
+      <div class="feature-box">
+        <i class="fa fa-5x fa-truck"></i>
+        <h1>Fast Shipping</h1>
+        <p>We make sure you recieve your trombone as soon as we have finished making it.
+          We also provide free returns if you are not satisfied.
+        </p>
+      </div>
+      <!-- feature box 03 -->
+      <div class="feature-box">
+        <i class="fa fa-5x fa-certificate"></i>
+        <h1>Quality Assurance</h1>
+        <p>For every purchase you make, we will ensure there are no damages or faults
+          and we will check and test the pitch of your instrument.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+  <section id="section--how-it-works">
+    <h2>How it works</h2>
+    <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc" frameborder="0"
+      controls=0 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" modestbranding="1"
+      showinfo="0" rel="0" fs="0" allowfullscreen></iframe>
+  </section>
+  <section id="section--pricing">
+    <h2>Our Pricing</h2>
+    <div class="flex-container">
+      <!-- plan card 01 -->
+      <div class="plan-card">
+        <div>
+          <h3>Tenor Trombone</h3>
+          <p>$600</p>
+        </div>
+        <div>
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Natus eaque.</li>
+            <li>Eius tempore.</li>
+            <li>Quis delectus?</li>
+          </ul>
+        </div>
+        <div><a href="#">Buy now</a></div>
+      </div>
+      <!-- plan card 02 -->
+      <div class="plan-card">
+        <div>
+          <h3>Bass Trombone</h3>
+          <p>$900</p>
+        </div>
+        <div>
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Natus eaque.</li>
+            <li>Eius tempore.</li>
+            <li>Quis delectus?</li>
+          </ul>
+        </div>
+        <div><a href="#">Buy now</a></div>
+      </div>
+      <!-- plan card 03 -->
+      <div class="plan-card">
+        <div>
+          <h3>Valve Trombone</h3>
+          <p>$1200</p>
+        </div>
+        <div>
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Natus eaque.</li>
+            <li>Eius tempore.</li>
+            <li>Quis delectus?</li>
+          </ul>
+        </div>
+        <div><a href="#">Buy now</a></div>
+      </div>
+
+    </div>
+
+  </section>
+  <footer>
+    <div class="footer-nav">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-link"><a href="#">Privacy</a></li>
+        <li class="footer-nav-link"><a href="#">Terms</a></li>
+        <li class="footer-nav-link"><a href="#">Contact</a></li>
+      </ul>
+      <p>Original Trombones Copyright &copy; 2020. All rights reserved. </p>
+    </div>
+
+  </footer>
+  <!--FreeCodeCamp Plugin-->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
