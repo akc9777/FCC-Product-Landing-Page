@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ee3d6e">
   <title>FCC: Product Landing Page</title>
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -13,8 +14,7 @@
 
 <body>
   <header id="header">
-    <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones company logo"
-      id="header-img" />
+    <img src="resources//img/original_trombones.png" alt="original trombones company logo" id="header-img" />
     <nav id="nav-bar">
       <ul id="nav-list">
         <li><a href="#section--features" class="nav-link">Feature</a></li>
@@ -22,10 +22,16 @@
         <li><a href="#section--pricing" class="nav-link">Pricing</a></li>
       </ul>
     </nav>
+    <!-- Hamburger Menu -->
+    <a href="javascript:void(0)" class="menu-toggle" onclick="mobileNavigationToggle()">
+      <i id="toggle-icon" class="fa fa-bars"></i>
+    </a>
+
+
   </header>
   <section class="home-hero">
     <div class="container">
-      <h1>Handcrafted, home-made masterpieces</h1>
+      <h1 class="hero-text">Handcrafted,<br> home-made masterpieces</h1>
       <form action="#" id="form">
         <input type="email" name="email" id="email" placeholder="Enter your email here" />
         <br />
@@ -39,7 +45,7 @@
       <!-- feature box 01 -->
       <div class="feature-box">
         <i class="fa fa-5x fa-star"></i>
-        <h1>Premium Materials</h1>
+        <h3>Premium Materials</h3>
         <p>Our trombones use the shiniest brass which is sourced locally.
           This will increase the longevity of your purchase.
         </p>
@@ -47,7 +53,7 @@
       <!-- feature box 02 -->
       <div class="feature-box">
         <i class="fa fa-5x fa-truck"></i>
-        <h1>Fast Shipping</h1>
+        <h3>Fast Shipping</h3>
         <p>We make sure you recieve your trombone as soon as we have finished making it.
           We also provide free returns if you are not satisfied.
         </p>
@@ -55,7 +61,7 @@
       <!-- feature box 03 -->
       <div class="feature-box">
         <i class="fa fa-5x fa-certificate"></i>
-        <h1>Quality Assurance</h1>
+        <h3>Quality Assurance</h3>
         <p>For every purchase you make, we will ensure there are no damages or faults
           and we will check and test the pitch of your instrument.
         </p>
@@ -66,9 +72,12 @@
   </section>
   <section id="section--how-it-works">
     <h2>How it works</h2>
-    <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc" frameborder="0"
-      controls=0 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" modestbranding="1"
-      showinfo="0" rel="0" fs="0" allowfullscreen></iframe>
+    <div class="video-container">
+      <iframe id="ytplayer" type="text/html" width="560" height="315"
+        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?controls=0&disablekb=1&fs=0&modestbranding=1&color=white"
+        frameborder="0"></iframe>
+    </div>
+
   </section>
   <section id="section--pricing">
     <h2>Our Pricing</h2>
@@ -87,7 +96,7 @@
             <li>Quis delectus?</li>
           </ul>
         </div>
-        <div><a href="#">Buy now</a></div>
+        <div><a href="#" class="btn">Buy now</a></div>
       </div>
       <!-- plan card 02 -->
       <div class="plan-card">
@@ -103,7 +112,7 @@
             <li>Quis delectus?</li>
           </ul>
         </div>
-        <div><a href="#">Buy now</a></div>
+        <div><a href="#" class="btn">Buy now</a></div>
       </div>
       <!-- plan card 03 -->
       <div class="plan-card">
@@ -119,7 +128,7 @@
             <li>Quis delectus?</li>
           </ul>
         </div>
-        <div><a href="#">Buy now</a></div>
+        <div><a href="#" class="btn">Buy now</a></div>
       </div>
 
     </div>
@@ -128,15 +137,17 @@
   <footer>
     <div class="footer-nav">
       <ul class="footer-nav-list">
-        <li class="footer-nav-link"><a href="#">Privacy</a></li>
-        <li class="footer-nav-link"><a href="#">Terms</a></li>
-        <li class="footer-nav-link"><a href="#">Contact</a></li>
+        <li><a href="#" class="footer-nav-link">Privacy</a></li>
+        <li><a href="#" class="footer-nav-link">Terms</a></li>
+        <li><a href="#" class="footer-nav-link">Contact</a></li>
       </ul>
-      <p>Original Trombones Copyright &copy; 2020. All rights reserved. </p>
+      <p>Original Trombones Copyright &copy; 2020. <br> All rights reserved. </p>
     </div>
 
   </footer>
-  <!--FreeCodeCamp Plugin-->
+  <!-- My Script -->
+  <script src="resources/js/script.js"></script>
+  <!-- FreeCodeCamp Plugin -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
